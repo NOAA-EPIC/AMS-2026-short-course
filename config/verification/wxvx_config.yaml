@@ -20,7 +20,7 @@ forecast:
 leadtimes:
   start: "00:00:00"
   step: "06:00:00"
-  stop: "240:00:00"
+  stop: "48:00:00"
 meta:
   grids: "{{ meta.workdir }}/grids"
   levels: &levels [925]
