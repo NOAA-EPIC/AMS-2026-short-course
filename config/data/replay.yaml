@@ -2,9 +2,9 @@ mover:
   name: mpidatamover
 
 directories:
-  zarr: /content/2026-AMS-short-course/config/data/replay.zarr
-  cache: /content/2026-AMS-short-course/config/data/cache
-  logs: /content/2026-AMS-short-course/config/data/logs
+  zarr: /content/AMS-2026-short-course/config/data/replay.zarr
+  cache: /content/AMS-2026-short-course/config/data/cache
+  logs: /content/AMS-2026-short-course/config/data/logs
 
 source:
   name: gcs_replay_atmosphere

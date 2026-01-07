@@ -14,7 +14,7 @@ forecast:
       inittime: forecast_reference_time
       validtime: time
   name: anemoi_results
-  path: /content/2026-AMS-short-course/config/postprocess/postprocessed_files/global.2022-01-03T12.240h.nc
+  path: /content/AMS-2026-short-course/config/postprocess/postprocessed_files/global.2022-01-03T12.240h.nc
   projection:
     proj: latlon
 leadtimes:
@@ -24,7 +24,7 @@ leadtimes:
 meta:
   grids: "{{ meta.workdir }}/grids"
   levels: &levels [925]
-  workdir: /content/2026-AMS-short-course/config/verification
+  workdir: /content/AMS-2026-short-course/config/verification
 paths:
   grids:
     baseline: "{{ meta.grids }}/baseline"
