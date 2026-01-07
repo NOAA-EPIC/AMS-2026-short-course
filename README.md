@@ -1,2 +1,3 @@
-# AMS_2026_Short_Course
+# AMS 2026 Short Course
+
 Artificial Intelligence in Numerical Weather Modeling Short Course at AMS 2026
