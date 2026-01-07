@@ -36,12 +36,6 @@ swa:
   enabled: False
   lr: 1.e-4
 
-# Optimizer settings
-optimizer:
-  zero: False # use ZeroRedundancyOptimizer ; saves memory for larger models
-  kwargs:
-    betas: [0.9, 0.95]
-
 optimizer:
   # ---------------------------------------------------------------
   # Choose optimizer type (_target_ approach)
@@ -54,7 +48,7 @@ optimizer:
   # ---------------------------------------------------------------
   # Learning rate is defined elsewhere
   #kwargs:
-  betas: [0.9, 0.95]      # β₁, β₂ for Adam-style optimizers
+  betas: [0.9, 0.95] # β₁, β₂ for Adam-style optimizers
 
 # select model
 model_task: anemoi.training.train.tasks.GraphForecaster

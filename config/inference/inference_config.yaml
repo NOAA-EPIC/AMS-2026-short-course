@@ -1,9 +1,9 @@
 checkpoint_path: ../train/training-output/checkpoint/ddf570a0-ea8f-4c25-b9ff-0c5077ef1af7/inference-last.ckpt
 
-lead_time: 240
+lead_time: 48
 
-start_date: 2022-01-03T12
-end_date: 2022-01-03T12
+start_date: 2022-01-05T00
+end_date: 2022-01-05T00
 freq: 6h
 
 input_dataset_kwargs: ../data/replay.zarr

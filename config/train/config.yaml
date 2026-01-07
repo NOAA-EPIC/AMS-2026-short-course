@@ -79,10 +79,10 @@ dataloader:
     end: "2022-01-04"
   validation:
     start: "2022-01-05"
-    end: "2022-01-14"
+    end: "2022-01-07"
   test:
-    start: "2022-01-15"
-    end: "2022-01-16"
+    start: "2022-01-07"
+    end: "2022-01-09"
 
 diagnostics:
   plot:

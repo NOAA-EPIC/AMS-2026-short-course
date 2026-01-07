@@ -35,6 +35,8 @@ levels:
   - 925
   - 975
 
-start_date: 2022-01-03T12
-end_date: 2022-01-03T12
+start_date: 2022-01-05T00
+end_date: 2022-01-05T00
 freq: 6h
+
+lead_time: 48

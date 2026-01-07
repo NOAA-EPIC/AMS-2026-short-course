@@ -1,10 +1,7 @@
 baseline:
-  compare: true
-  name: GFS
-  type: grid
-  url: https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{{ yyyymmdd }}/{{ hh }}/atmos/gfs.t{{ hh }}z.pgrb2.0p25.f{{ "%03d" % fh }}
+  name: truth
 cycles:
-  - 2022-01-03T12:00:00
+  - 2022-01-05T00:00:00
 forecast:
   coords:
     latitude: latitude
@@ -14,7 +11,7 @@ forecast:
       inittime: forecast_reference_time
       validtime: time
   name: anemoi_results
-  path: /content/AMS-2026-short-course/config/postprocess/postprocessed_files/global.2022-01-03T12.240h.nc
+  path: /content/AMS-2026-short-course/config/postprocess/postprocessed_files/global.2022-01-05T00.48h.nc
   projection:
     proj: latlon
 leadtimes:
@@ -27,9 +24,13 @@ meta:
   workdir: /content/AMS-2026-short-course/config/verification
 paths:
   grids:
-    baseline: "{{ meta.grids }}/baseline"
     forecast: "{{ meta.grids }}/forecast"
+    truth: "{{ meta.grids }}/truth"
   run: "{{ meta.workdir }}/run"
+truth:
+  name: GFS
+  type: grid
+  url: https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.{{ yyyymmdd }}/{{ hh }}/atmos/gfs.t{{ hh }}z.pgrb2.0p25.f{{ "%03d" % fh }}
 variables:
   tmp2m:
     level_type: heightAboveGround
