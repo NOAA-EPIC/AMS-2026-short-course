@@ -41,19 +41,11 @@ variables:
     level_type: heightAboveGround
     levels: [2]
     name: 2t
-  spfh:
-    level_type: isobaricInhPa
-    levels: *levels
-    name: q
-  tmp:
-    level_type: isobaricInhPa
-    levels: *levels
-    name: t
-  ugrd:
-    level_type: isobaricInhPa
-    levels: *levels
-    name: u
-  vgrd:
-    level_type: isobaricInhPa
-    levels: *levels
-    name: v
+  #ugrd10m:
+  #  level_type: isobaricInhPa
+  #  levels: [10]
+  #  name: u_10
+  #vgrd10m:
+  #  level_type: isobaricInhPa
+  #  levels: [10]
+  #  name: v_10

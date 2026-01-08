@@ -10,7 +10,7 @@ source:
   name: gfs_archive
   t0:
     start: 2022-01-01T00
-    end: 2022-01-08T18
+    end: 2022-01-07T12
     freq: 6h
 
   fhr:
@@ -64,7 +64,8 @@ target:
   compute_temporal_residual_statistics: True
   statistics_period:
     start: 2022-01-01T00
-    end: 2022-01-081T18
+    end: 2022-01-04T18
+
   forcings:
     - cos_latitude
     - sin_latitude
