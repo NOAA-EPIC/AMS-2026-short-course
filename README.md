@@ -1,6 +1,6 @@
-# AMS 2026 Short Course
+## AMS 2026 Short Course
 
-Welcome to the Earth Prediction Innovation Center's (EPIC) Artificial Intelligence in Numerical Weather Modeling Short Course at AMS 2026!
+**Welcome to the Earth Prediction Innovation Center's (EPIC) Artificial Intelligence in Numerical Weather Modeling Short Course at AMS 2026!**
 
 Artificial intelligence is rapidly becoming one of the most transformative tools in weather prediction, offering new ways to improve accuracy, efficiency, and scientific discovery. To help the research community explore these advances, NOAA’s Earth Prediction Innovation Center (EPIC) will host a dedicated short course at AMS 2026, focused on hands-on training with community-developed AI modeling tools. This workshop is designed not only to teach participants how to use cutting-edge AI models, but also to equip them with tools and techniques needed to continue innovating long after the session concludes.
 
@@ -14,13 +14,32 @@ This course offers a unique opportunity to be at the forefront of the next wave 
 
 _____________________________________________________________________
 
-The EAGLE Pipeline (see `eagle_pipeline_demo.ipynb`)
+## The EAGLE Pipeline
 
-This notebook contains various configurations to guide users through a full machine learning pipeline for weather prediction! The steps include:
+To complete this pipeline, see `eagle_pipeline_demo.ipynb`
 
-1) Proper environment setup: Environment set up with pip and conda
-2) Prepare training data: Use ufs2arco to create training and validation datasets
-3) Train an AI model: Use anemoi-core modules to train a graph-based model for weather prediction
-4) Generate a forecast: Use anemoi-inference to run inference from a model checkpoint
-5) Postprocess output: Ensure that output from inference is compatible with downstream applications
-5) Verify model performance: use wxvx to verify forecasts against gridded analysis and observervations
+This notebook walks users through a complete, end-to-end machine learning pipeline for weather prediction. It includes multiple configurations and examples that illustrate each stage of the workflow:
+
+Step 1: Environment setup
+
+Configure the required environments using pip and conda.
+
+Step 2: Training data preparation
+
+Generate training and validation datasets using [ufs2arco](https://ufs2arco.readthedocs.io/en/latest/).
+
+Step 3: Model training
+
+Train a graph-based weather prediction model using [anemoi-core](https://github.com/ecmwf/anemoi-core) packages.
+
+Step 4: Forecast generation
+
+Run inference from a trained model checkpoint using [anemoi-inference](https://anemoi.readthedocs.io/projects/inference/en/latest/).
+
+Step 5: Postprocessing
+
+Process inference with [eagle-tools](https://github.com/NOAA-PSL/eagle-tools) to ensure compatibility with downstream applications.
+
+Step 6: Model verification
+
+Evaluate forecast performance using [wxvx](https://github.com/maddenp-cu/wxvx), comparing predictions against gridded analyses and observations.
